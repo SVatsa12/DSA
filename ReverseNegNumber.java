@@ -14,6 +14,8 @@ public class ReverseNegNumber {
     }
     public static void main(String[] args) {
         int num=-123;
+        int n=1783;
+        System.out.println(ReverseNegative(n));
         System.out.println(ReverseNegative(num));
     }
 }
