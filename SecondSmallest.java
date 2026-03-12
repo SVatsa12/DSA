@@ -1,4 +1,10 @@
+import java.util.*;;
 public class SecondSmallest {
+    public static int Secondsmallest2(int arr[]){
+        //brute force
+        Arrays.sort(arr);
+        return arr[1];
+    }
     public static int Secondsmallest(int arr[]){
         int smallest=Integer.MAX_VALUE;
         int sSmallest=Integer.MAX_VALUE;
@@ -15,5 +21,6 @@ public class SecondSmallest {
     public static void main(String[] args) {
         int arr[]={1,2,3,4,5,7};
         System.out.println(Secondsmallest(arr));
+        System.out.println(Secondsmallest2(arr));
     }
 }
