@@ -22,7 +22,7 @@ public class MaximumSubarraySum {
         if(arr.length==1){
             return arr[0];
         }
-        for(int i=0;i<arr.length;i++){
+        for(int i=1;i<arr.length;i++){
             currSum=Math.max(arr[i],currSum+arr[i]);
             maxSum=Math.max(maxSum, currSum);
         }
