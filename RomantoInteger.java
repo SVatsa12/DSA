@@ -1,0 +1,37 @@
+import java.util.*;
+
+public class RomantoInteger {
+    public int romanToInt(String s) {
+        HashMap<Character, Integer> map = new HashMap<>();
+
+        map.put('I', 1);
+        map.put('V', 5);
+        map.put('X', 10);
+        map.put('L', 50);
+        map.put('C', 100);
+        map.put('D', 500);
+        map.put('M', 1000);
+
+        int sum = 0;
+
+        for(int i = 0; i < s.length(); i++) {
+            int curr = map.get(s.charAt(i)); // ✅ fixed
+
+            if(i < s.length() - 1 && curr < map.get(s.charAt(i + 1))) {
+                sum -= curr;
+            } else {
+                sum += curr;
+            }
+        }
+
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        RomantoInteger obj = new RomantoInteger();
+
+        System.out.println(obj.romanToInt("III"));     // 3
+        System.out.println(obj.romanToInt("LVIII"));   // 58
+        System.out.println(obj.romanToInt("MCMXCIV")); // 1994
+    }
+}
