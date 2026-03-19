@@ -2,6 +2,7 @@
 import java.util.Arrays;
 
 public class MoveZerostoEnd {
+    
     public static void MoveZeros(int arr[]){
         int idx=0;
         for(int i=0;i<arr.length;i++){

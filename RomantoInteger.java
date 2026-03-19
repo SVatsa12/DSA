@@ -15,7 +15,7 @@ public class RomantoInteger {
         int sum = 0;
 
         for(int i = 0; i < s.length(); i++) {
-            int curr = map.get(s.charAt(i)); // ✅ fixed
+            int curr = map.get(s.charAt(i));
 
             if(i < s.length() - 1 && curr < map.get(s.charAt(i + 1))) {
                 sum -= curr;
