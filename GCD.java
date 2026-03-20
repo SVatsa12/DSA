@@ -1,4 +1,4 @@
-import java.util.*;
+
 public class GCD {
     public static int calculateGCD(int a,int b){
         while(b!=0){
