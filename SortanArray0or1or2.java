@@ -19,11 +19,38 @@ public class SortanArray0or1or2 {
             nums[i++]=2;
         }
     }
+    public static void sortcolors2(int arr[]){
+        int low=0;
+        int mid=0;
+        int high=arr.length-1;
+        while (mid<=high) {
+            if(arr[mid]==0){
+                int temp=arr[low];
+                arr[low]=arr[mid];
+                arr[mid]=temp;
+                low++;
+                mid++;
+            }else if(arr[mid]==1){
+                mid++;
+            }else{
+                int temp=arr[mid];
+                arr[mid]=arr[high];
+                arr[high]=temp;
+                high--;
+            }
+        }
+    }
     public static void main(String[] args) {
         int nums[]={2,0,2,1,1,0};
+        int nums2[]={2,0,2,1,1,0};
         sortcolors(nums);
         for(int i=0;i<nums.length;i++){
             System.out.print(nums[i]+" ");
+        }
+        System.out.println( );
+        sortcolors2(nums2);
+        for(int i:nums2){
+            System.out.print(i+ " ");
         }
     }
 }
