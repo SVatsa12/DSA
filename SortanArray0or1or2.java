@@ -19,6 +19,7 @@ public class SortanArray0or1or2 {
             nums[i++]=2;
         }
     }
+    //method 2:-optimized code
     public static void sortcolors2(int arr[]){
         int low=0;
         int mid=0;
