@@ -6,8 +6,8 @@ public class SecondLargest {
         Arrays.sort(arr);
         return arr[n-2];
     }
+    //optimised
         public static int Secondlargest2(int arr[]){
-        //brute
         int n=arr.length;
         int largest=Integer.MIN_VALUE;
         int sLargest=Integer.MIN_VALUE;
