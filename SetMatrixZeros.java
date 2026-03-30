@@ -86,7 +86,7 @@ public class SetMatrixZeros {
                 }
             }
         }
-        //zero the first col if needed
+        //zero the first col if need
         if(firstColZero){
             for(int i=0;i<m;i++){
                 matrix[i][0]=0;
