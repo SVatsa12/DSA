@@ -1,3 +1,4 @@
+import java.util.*;
 public class TransposeOfMatrix {
     //for square matrix only
     public static void Transpose(int matrix[][]){
