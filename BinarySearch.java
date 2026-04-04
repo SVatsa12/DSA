@@ -1,3 +1,4 @@
+import java.util.*;
 public class BinarySearch {
     public static int Binarysearch(int arr[],int key){
         int low=0;
