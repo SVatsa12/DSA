@@ -16,5 +16,9 @@ public class HashMap1 {
         //size method
         System.out.println(hm.size());
 
+        //containsKey method :returns boolean result
+        System.out.println(hm.containsKey("Delhi"));
+        System.out.println(hm.containsKey("Jammu"));
+
     }
 }
