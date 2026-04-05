@@ -20,5 +20,8 @@ public class HashMap1 {
         System.out.println(hm.containsKey("Delhi"));
         System.out.println(hm.containsKey("Jammu"));
 
+        hm.remove("Chennai");
+        System.out.println(hm);
+
     }
 }
