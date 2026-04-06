@@ -20,7 +20,15 @@ public class HashMap1 {
         System.out.println(hm.containsKey("Delhi"));
         System.out.println(hm.containsKey("Jammu"));
 
+        //remove():returns null if key doesn't exist in hashmap
         hm.remove("Chennai");
+        System.out.println(hm);
+
+        //isEmpty():returns boolean result
+        System.out.println(hm.isEmpty());
+
+        //clear():removes every entry in hashmap
+        hm.clear();
         System.out.println(hm);
 
     }
