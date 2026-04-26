@@ -11,6 +11,8 @@ public class LinkedHashMapImplementation {
         System.out.println(lhm);
         lhm.remove(4);
         System.out.println(lhm);
+       System.out.println(lhm.get(2)); 
+       
 
     }
 }
