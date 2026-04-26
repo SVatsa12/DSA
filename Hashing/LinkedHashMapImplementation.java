@@ -12,7 +12,7 @@ public class LinkedHashMapImplementation {
         lhm.remove(4);
         System.out.println(lhm);
        System.out.println(lhm.get(2)); 
-       
+       System.out.println(lhm.containsKey(3));
 
     }
 }
