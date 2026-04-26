@@ -9,6 +9,8 @@ public class LinkedHashMapImplementation {
         lhm.put(4,200);
         lhm.put(5,250);
         System.out.println(lhm);
+        lhm.remove(4);
+        System.out.println(lhm);
 
     }
 }
