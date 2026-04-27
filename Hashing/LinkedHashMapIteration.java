@@ -14,6 +14,11 @@ public class LinkedHashMapIteration {
             System.out.println(entry.getKey()+"->"+entry.getValue());
         }
         
+        //using keySet()
+        System.out.println("Iteration using Keyset()");
+        for(String key:lhm.keySet()){
+            System.out.println(key+"->"+lhm.get(key));
+        }
 
     }
 }
