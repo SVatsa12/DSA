@@ -1,4 +1,5 @@
-import java.util.*;
+package Arrays2D;
+
 public class TransposeOfMatrix {
     //for square matrix only
     public static void Transpose(int matrix[][]){

@@ -1,3 +1,4 @@
+package Arrays2D;
 public class SetMatrixZeros {
     //brute
     public static void SetMatrixZero(int matrix[][]){
