@@ -1,4 +1,14 @@
+package STRINGS;
 public class PalindromeString {
+    public static boolean isPalindrome2(String str){
+        int n=str.length();
+        for(int i=0;i<n/2;i++){
+            if(str.charAt(i)!=str.charAt(n-i-1)){
+                return false;
+            }
+        }
+        return true;
+    }
     public static boolean isPalindrome(String s){
         int n=s.length();
         int i=0;
@@ -36,6 +46,8 @@ public class PalindromeString {
         String str2="madam";
         System.out.println(isPalindrome(str1));
         System.out.println(isPalindrome(str2));
+        System.out.println(isPalindrome2(str1));
+        System.out.println(isPalindrome2(str2));
         System.out.println(isPalindromeLEETCODE(str1));
         System.out.println(isPalindromeLEETCODE(str2));
     }
