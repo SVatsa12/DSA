@@ -14,16 +14,18 @@ public class Fibonacci {
     public static void fibUsingForLoop(int n){
         int f0=0;
         int f1=1;
-      for(int i=2;i<=n;i++){
+      for(int i=0;i<=n;i++){
+            System.out.print(f0+" ");
             int res=f0+f1;
             f0=f1;
             f1=res;
 
         }
-        System.out.println(f1);
+        
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number:");
         int n=sc.nextInt();
         fibUsingWhileLoop(n);
         fibUsingForLoop(n);
