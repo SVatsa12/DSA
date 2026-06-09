@@ -33,7 +33,21 @@ public class LinkedList1 {
         }
         tail.next=newnode;
         tail=newnode;
-
+    }
+    //insert at the end using node head
+    public void addLast2(int data){
+        Node newnode=new Node(data);
+        size++;
+        while(head==null){
+            head=newnode;
+            return;
+        }
+        Node temp=head;
+        while(temp.next!=null){
+            temp=temp.next;
+        }
+        temp.next=newnode;
+        
     }
     public  void printList(){
         Node temp=head;
@@ -52,6 +66,8 @@ public class LinkedList1 {
         ll.addFirst(40);
         ll.addFirst(50);
         ll.addLast(80);
+        ll.printList();
+        ll.addLast2(120);
         ll.printList();
         System.out.println(ll.size);
     }
